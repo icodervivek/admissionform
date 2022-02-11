@@ -57,7 +57,7 @@ const studentSchema = new mongoose.Schema({
 const Student = new mongoose.model("Student", studentSchema);
 
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 
 app.get("/", (req, res) => {
